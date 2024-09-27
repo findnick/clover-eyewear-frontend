@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      const timeline_wrapper = document.querySelector(".timeline-wrapper");
+            timelines = document.querySelectorAll(".timeline li .data");
+
+      for (const time of timelines) {
+         time.onclick = () => time.classList.toggle("show");
+      }
+
+      timeline_wrapper.addEventListener("mousemove", (event) => {
+        const timeline = document.querySelector(".timeline");
+        let scroll_width = event.pageX / timeline_wrapper.clientWidth
+        *  (timeline_wrapper.clientWidth - timeline.clientWidth);
+        timeline.style.left = scroll_width.toFixed(1) + "px";
+      });
+    </script>
+  </body>
+</html>

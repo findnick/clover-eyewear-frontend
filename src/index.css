@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #004aad;
+  --hover-blue: #165aad;
+  --active-blue: #3c65a8;
+  --default-text: #000000;
+  --default-bg: #ffffff;
+}
+
+* {
+  font-family: "Exo", sans-serif;
+
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Exo", sans-serif;
+}
+
+.poppins {
+  font-family: "Exo", sans-serif;
+}
+
+.roboto {
+  font-family: "Exo", sans-serif;
+}
+
+/* Customize the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+  height: 12px;
+  /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+/* Customize the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Color of the scrollbar track */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+/* Customize the scrollbar thumb (scrolling part) */
+::-webkit-scrollbar-thumb {
+  background-color: #004aad;
+  /* Color of the thumb */
+  border-radius: 10px;
+  /* Rounded corners */
+  border: 3px solid #f1f1f1;
+  /* Space around the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3c65a8;
+  /* Darker color when hovering */
+}
+
+/* Click effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:active {
+  background-color: #6598db;
+  /* Darker color when hovering */
+}
